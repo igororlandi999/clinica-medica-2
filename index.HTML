@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica XYZ</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            height: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+
+        .menu {
+            background-color: #333;
+            color: white;
+            width: 200px;
+            padding: 20px;
+            flex-shrink: 0;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .menu ul li a:hover {
+            background-color: #555;
+        }
+
+        .main {
+            margin-left: 220px;
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 220px);
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .header img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horarios.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <img src="header-image.jpg" alt="Logo da Clínica">
+                <p>Seja bem-vindo à Clínica de Saúde!</p>
+            </div>
+    
+            <div class="content">
+                <h1>Sobre a Clínica XYZ</h1>
+                <p>A Clínica XYZ foi fundada em 2020 com o objetivo de oferecer serviços médicos de alta qualidade. Nossas instalações modernas e nossa equipe especializada garantem um atendimento eficiente e humanizado para todos os nossos pacientes.</p>
+                
+                <h1>Horário de Atendimento</h1>
+                <p>Confira os horários de atendimento da Clínica XYZ:</p>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Serviços</th>
+                            <th>Segunda a Sexta</th>
+                            <th>Sábados</th>
+                            <th>Feriados</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Clínica geral</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Psicologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 14h</td>
+                            <td>08h - 14h</td>
+                        </tr>
+                        <tr>
+                            <td>Pediatria</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Oftalmologia</td>
+                            <td>08h - 19h</td>
+                            <td>08h - 18h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+            <div class="footer">
+                <p>&copy; 2024 Clínica XYZ. Todos os direitos reservados.</p>
+                <p>Telefone: (00) 1234-5678 | WhatsApp: (00) 91234-5678</p>
+                <p>Endereço: Rua da Saúde, 123, Cidade, Estado</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
